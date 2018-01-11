@@ -16,7 +16,7 @@ describe('HttpUtils', () => {
       .withBody('device_id')
       .withBody('device_name')
       .build()
-      .execute()
+      .check()
       .then((data) => {
         expect(data.body.device_id).to.equal(123);
         expect(data.body.device_name).to.equal('hello');
@@ -34,7 +34,7 @@ describe('HttpUtils', () => {
       .withHeaderVal('Content-Type', 'application/json')
       .withBody('device_type')
       .build()
-      .execute()
+      .check()
       .then(() => {
         return Promise.reject(new Error('Does not throws BadRequestError'));
       })

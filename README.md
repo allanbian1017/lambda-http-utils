@@ -21,7 +21,7 @@ new lambdaUtils.HttpUtils.Builder(headers, body)
       .withHeaderVal('Content-Type', 'application/json')
       .withBody('some_key')
       .build()
-      .execute()
+      .check()
       .then((data) => {
         // Do something with parsed data...
       })
