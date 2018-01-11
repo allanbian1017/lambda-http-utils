@@ -1,5 +1,7 @@
 # lambda-http-utils
 
+[![Build Status](https://travis-ci.org/allanbian1017/lambda-http-utils.svg?branch=master)](https://travis-ci.org/allanbian1017/lambda-http-utils)
+
 _lambda-http-utils_ is a utility to make it easy to do parameter checking while developing serverless application like AWS Lambda + API Gateway.
 
 ## Setup
