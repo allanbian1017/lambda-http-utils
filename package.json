@@ -6,6 +6,11 @@
     "test": "./node_modules/.bin/nyc ./node_modules/.bin/mocha",
     "lint": "./node_modules/.bin/eslint ."
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allanbian1017/lambda-http-utils.git"
+  },
+  "homepage": "https://github.com/allanbian1017/lambda-http-utils",
   "keywords": ["serverless", "aws", "lambda"],
   "author": "Allan Bian <allanbian@gmail.com>",
   "license": "MIT",
