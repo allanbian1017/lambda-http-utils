@@ -10,6 +10,8 @@ cache:
 script:
   - npm run lint
   - npm test
+  - npm run report-coverage
+  - codecov
 
 deploy:
   provider: npm
