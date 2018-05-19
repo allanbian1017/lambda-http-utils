@@ -10,3 +10,11 @@ cache:
 script:
   - npm run lint
   - npm test
+
+deploy:
+  provider: npm
+  email: "allanbian@gmail.com"
+  api_key: 
+    secure: "CjV05Q8h6TXb/5V+0xB487MA42I40K4cuCp41VEV0kjVrZrRJ+XbVOuYhatCDBOflBXmjos+UHIkEHlAYtFCa21gl9Tdkn/7f7LP4r8kibPjwNS1IrDxDQl5reMQDqlahbwzexB/8tPz1EePIEqWRlDS0QRdx6+sPoCLPdHJfAJsx+SyX2VtM7rywB8gqF258XLfhi04wgSb/MZLlnBy+5xEa1jIK7kbh7sLYAR4EiYRAgtwkb5ASVmOsd+a0qLPvwiAXc2MXbJlK3u8zHOwUhdBzRZgBJeUjYkTOJdUj1DNmNzql7/FqAZBuxA0hIKn1c+t8cy/bUPuRIkgJBpicOFS1fA20GweUasahSFssi5vCzz37uy4f4Iju5TSgzNQfQn+0d3mmDX8VawwDWrR00vA+Bbi+9yuCSABrUAaOPIrF8ykHN4kp59vyjTxJgmTUd2XuG25XjQh272+/qwhH4L0dh5yuXekuJDQbpt4N3sNXjYEbt2fz8UqDjv/5n8Nm2NlHj1K/O9KTPbNOtS+YzpxLVI97rrvSfcWq7u3tJTx4OWH4J+68+E+h38haf9kF8Ovn0rRmt+lH8cfS+/1F/4YTsdhQ6XdfbD4qquPAlqm6ZXmqkBjZ8KwonriNUm/IH5lOm2CjqfLugWy5/cDoafakRpE5mZfevo8G/lQcEM="
+  on:
+    tags: true
