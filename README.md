@@ -1,6 +1,8 @@
 # lambda-http-utils
 
 [![Build Status](https://travis-ci.org/allanbian1017/lambda-http-utils.svg?branch=master)](https://travis-ci.org/allanbian1017/lambda-http-utils)
+[![View on NPM](https://img.shields.io/npm/v/lambda-http-utils.svg)](https://www.npmjs.com/package/lambda-http-utils)
+[![View on NPM](https://img.shields.io/npm/dm/lambda-http-utils.svg)](https://www.npmjs.com/package/lambda-http-utils)
 
 _lambda-http-utils_ is a utility to make it easy to do parameter checking while developing serverless application like AWS Lambda + API Gateway.
 
@@ -8,8 +10,8 @@ _lambda-http-utils_ is a utility to make it easy to do parameter checking while 
 
 Install:
 
-```
-$ npm install lambda-http-utils --save-dev
+```sh
+npm install lambda-http-utils --save-dev
 ```
 
 ## Example
