@@ -7,12 +7,12 @@ const expect = require('chai').expect;
 describe('HttpUtils', () => {
   it('should pass check', () => {
     const testHeader = {
-      'Content-Type': 'application/json',
+      'content-type': 'application/json',
     };
     const testBody = '{\n\t"device_id": 123,\n\t"device_name": "hello"\n}';
 
     return new HttpUtils.Builder(testHeader, testBody)
-      .withHeaderVal('Content-Type', 'application/json')
+      .withHeaderVal('content-type', 'application/json')
       .withBody('device_id')
       .withBody('device_name')
       .build()
@@ -26,12 +26,12 @@ describe('HttpUtils', () => {
 
   it('should throws BadRequestError when specific key is not in body', () => {
     const testHeader = {
-      'Content-Type': 'application/json',
+      'content-type': 'application/json',
     };
     const testBody = '{\n\t"device_id": 123,\n\t"device_name": "hello"\n}';
 
     return new HttpUtils.Builder(testHeader, testBody)
-      .withHeaderVal('Content-Type', 'application/json')
+      .withHeaderVal('content-type', 'application/json')
       .withBody('device_type')
       .build()
       .check()
@@ -49,12 +49,12 @@ describe('HttpUtils', () => {
 
   it('should throws BadRequestError when key with empty string', () => {
     const testHeader = {
-      'Content-Type': 'application/json',
+      'content-type': 'application/json',
     };
     const testBody = '{\n\t"device_id": 123,\n\t"device_name": ""\n}';
 
     return new HttpUtils.Builder(testHeader, testBody)
-      .withHeaderVal('Content-Type', 'application/json')
+      .withHeaderVal('content-type', 'application/json')
       .withBody('device_name')
       .build()
       .check()
